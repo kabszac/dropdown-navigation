@@ -32,7 +32,16 @@ body {
     align-items: center;
     width: 100%;
     padding: 1.5rem 1rem;
+   
 }
+
+.navbar-first-part{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
 
 .navbar-links{
     display: none;
@@ -114,6 +123,10 @@ body {
 }
 
 button .cleric-down{
+    display: none;
+}
+
+.nav-buttons-desktop{
     display: none;
 }
 
@@ -235,6 +248,7 @@ button .cleric-down{
         justify-content: center;
         align-items: center;
         gap: 3rem;
+        width: auto;
     }
 
     .brand-title{
@@ -260,6 +274,10 @@ button .cleric-down{
     /* .dropdown-list{
         display: none;
     } */
+
+    .nav-buttons-desktop{
+        display: unset;
+    }
 
     .nav-buttons-desktop button{
         background-color: var(--Almost-White);
