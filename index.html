@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@400;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-first-part">
+      <div class="brand-title">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <div class="nav-image">
+        <input type="image"  class="open" src="./images/icon-menu.svg" />
+      </div>
+      <div class="navbar-links">
+            <div class="dropdown" data-dropdown>
+              <button class="link" data-dropdown-button>
+                Features
+                <span class="cleric-up"><img src="./images/icon-arrow-up.svg" alt=""></span>
+                <span class="cleric-down"><img src="./images/icon-arrow-down.svg" alt=""></span>
+              </button>
+              <div class="dropdown-list lst1">
+                <div class="to-do"> <span><img src="./images/icon-todo.svg" alt=""></span><a href="#">Todo list</a></div>
+                <div class=""> <span><img src="./images/icon-calendar.svg" alt=""></span><a href="">Calendar</a> </div>
+                <div class=""> <span><img src="./images/icon-reminders.svg" alt=""></span><a href="">Reminders</a></div>
+                <div class="planning"> <span><img src="./images/icon-planning.svg" alt=""></span><a href="">Planning</a></div>
+              </div>
+            </div>
+            <div class="dropdown" data-dropdown>
+              <button class="link" data-dropdown-button>
+                Company
+                <span class="cleric-up"><img src="./images/icon-arrow-up.svg" alt=""></span>
+                <span class="cleric-down"><img src="./images/icon-arrow-down.svg" alt=""></span>
+              </button>
+              <div class="dropdown-list lst2">
+                <div class="history"><a href="">History</a></div>
+                <div class=""><a href="">Our Team</a> </div>
+                <div class="blog"><a href="">Blog</a></div>
+              </div>
+            </div>
+            <div class="nav-a"><a href="#">Career</a></div>
+            <div class="nav-a"><a href="#">About</a></div>       
+      </div>
+    </div>
+    <div class="nav-buttons-desktop">
+      <button class="login-button">Login</button>
+      <button>Register</button>
+    </div>
+  </nav>
+  <div class="modal">
+    <div class="overlay"></div>
+    <div class="modal-content">
+        <input type="image" class="close" src="./images/icon-close-menu.svg" />
+        <div class="links-list">
+          <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button>
+              Features
+              <span class="cleric-up"><img src="./images/icon-arrow-up.svg" alt=""></span>
+              <span class="cleric-down"><img src="./images/icon-arrow-down.svg" alt=""></span>
+            </button>
+            <div class="dropdown-list lst1">
+              <div class=""> <span><img src="./images/icon-todo.svg" alt=""></span><a href="#">Todo list</a></div>
+              <div class=""> <span><img src="./images/icon-calendar.svg" alt=""></span><a href="">Calendar</a> </div>
+              <div class=""> <span><img src="./images/icon-reminders.svg" alt=""></span><a href="">Reminders</a></div>
+              <div class=""> <span><img src="./images/icon-planning.svg" alt=""></span><a href="">Planning</a></div>
+            </div>
+          </div>
+          <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button>
+              Company
+              <span class="cleric-up"><img src="./images/icon-arrow-up.svg" alt=""></span>
+              <span class="cleric-down"><img src="./images/icon-arrow-down.svg" alt=""></span>
+            </button>
+            <div class="dropdown-list">
+              <div class=""><a href="">History</a></div>
+              <div class=""><a href="">Our Team</a> </div>
+              <div class=""><a href="">Blog</a></div>
+            </div>
+          </div>
+          <div ><a href="#">Career</a></div>
+          <div><a href="#">About</a></div>       
+        </div>
+        <div class="nav-buttons-phone">
+          <button class="career-button">Login</button>
+          <button>Register</button>
+        </div>
+    </div>
+  </div>
+  <section class="main-section">
+    <div class="main-image">
+      <img class="img-desktop" src="./images/image-hero-desktop.png" alt="desktop">
+      <img class="img-mobile" src="./images/image-hero-mobile.png" alt="mobile">
+      <img src="" alt="">
+    </div>
+    <div class="main-section-content">
+      <h1>Make remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+      <div class="main-section-button">
+        <button>Learn more</button>
+      </div>     
+      <div class="main-section-client">
+        <img class="img1" src="./images/client-databiz.svg" alt="">
+        <img class="img2" src="./images/client-audiophile.svg" alt="">
+        <img class="img3" src="./images/client-meet.svg" alt="">
+        <img  class="img4"src="./images/client-maker.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Isaac Kuria</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
